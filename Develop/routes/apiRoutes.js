@@ -14,12 +14,15 @@ router.get("/api/workouts", (req, res) => {
 
 //create a new workout in database
 router.post("/api/workouts", async (req, res) => {
-  try {
-    const response = await db.Workout.create({});
-    res.json(response);
-  } catch (err) {
-    console.log("error creating workout: ", err);
-  }
+  // try {
+  //   const response = await db.Workout.create({});
+  //   res.json(response);
+  // } catch (err) {
+  //   console.log("error creating workout: ", err);
+  // }
+
+  const response = await db.Workout.create({});
+  res.json(response);
 });
 
 //used api.js tp add excercise to a workout

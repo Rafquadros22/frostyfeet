@@ -14,10 +14,10 @@ const exerciseSchema = new Schema({
   },
   duration: {
     type: Number,
-    required: "Enter an exrecise duration in minutes!",
   },
   weight: {
     type: Number,
+    required: "Enter an exrecise duration in minutes!",
   },
   reps: {
     type: Number,
